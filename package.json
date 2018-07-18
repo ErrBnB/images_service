@@ -1,0 +1,25 @@
+{
+  "name": "images_service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErrBnB/images_service.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErrBnB/images_service/issues"
+  },
+  "homepage": "https://github.com/ErrBnB/images_service#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mysql": "^2.15.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
