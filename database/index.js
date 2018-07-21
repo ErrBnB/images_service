@@ -63,3 +63,19 @@ connection.query(imagesQuery, [imagesValues], (err) => {
     console.log('Error Inserting Image Data' + err);
   }  
 });
+
+const getImageInfo= function(callback) {
+  const query = 'SELECT * FROM images INNER JOIN rooms ON room_id = rooms.id where rooms.id = 49';
+  connection.query(query, (err, data) => {
+      if(err){
+          callback(err);
+      } else {
+          console.log('All Info from Tables for Certain Room ID:', data);
+          callback(null, data);
+      }
+  })
+};
+
+module.exports = {
+  getImageTableInfo
+} 
