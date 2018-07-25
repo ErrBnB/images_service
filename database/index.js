@@ -14,29 +14,29 @@ const room_name = ['939 Maker Hub', 'StoneHenge Hacker House','Silicon Valley Ha
 const city = ['Menlo Park', 'San Francisco', 'Denver', 'New York City', 'Los Angeles', 'San Diego', 'Austin','Salt Lake City','Seattle','Portland']; 
 
 const description = [
-  'Pug authentic litAF church-key prism man bun cornhole fanny pack.',
-  'Street art food truck bitters fixie tumblr cold-pressed air plant edison bulb fam.',
-  'Chia kogi pitchfork, la croix retro neutra literally hexagon.',
-  'Pinterest swag deep v, selfies hoodie kombucha tacos four dollar toast lyft leggings.',
-  'Portland polaroid selfies meditation, vexillologist cardigan humblebrag.',
-  'Photo booth craft beer gluten-free hammock keytar mumblecore iPhone ethical',
-  'Direct trade you probably havent heard of them post-ironic.',
-  'Helvetica actually neutra pickled fashion axe poutine.',
-  'Fixie hot chicken heirloom normcore wolf tote bag crucifix',
-  'DIY occupy waistcoat, kale chips organic tumeric hell of vegan.'
+    'Pug authentic litAF church-key prism man bun cornhole fanny pack.',
+    'Street art food truck bitters fixie tumblr cold-pressed air plant edison bulb fam.',
+    'Chia kogi pitchfork, la croix retro neutra literally hexagon.',
+    'Pinterest swag deep v, selfies hoodie kombucha tacos four dollar toast lyft leggings.',
+    'Portland polaroid selfies meditation, vexillologist cardigan humblebrag.',
+    'Photo booth craft beer gluten-free hammock keytar mumblecore iPhone ethical',
+    'Direct trade you probably havent heard of them post-ironic.',
+    'Helvetica actually neutra pickled fashion axe poutine.',
+    'Fixie hot chicken heirloom normcore wolf tote bag crucifix',
+    'DIY occupy waistcoat, kale chips organic tumeric hell of vegan.'
 ];
 
 const url = [
-  "https://s3-us-west-1.amazonaws.com/imagemodule/16561547556_88d53e4216_b.jpg",
-  "https://s3-us-west-1.amazonaws.com/imagemodule/15965382974_caeb4189d9_b.jpg",
-  "https://s3-us-west-1.amazonaws.com/imagemodule/15967767923_3a41c9ec1a_b.jpg",
-  "https://s3-us-west-1.amazonaws.com/imagemodule/15967768043_a4cf7f497f_b.jpg",
-  "https://s3-us-west-1.amazonaws.com/imagemodule/15967768093_461f8f5f0d_b.jpg",
-  "https://s3-us-west-1.amazonaws.com/imagemodule/15967768423_4d91799830_b.jpg",
-  "https://s3-us-west-1.amazonaws.com/imagemodule/16400524980_ca60012b25_b.jpg",
-  "https://s3-us-west-1.amazonaws.com/imagemodule/16400525400_28a4117ebe_b.jpg",
-  "https://s3-us-west-1.amazonaws.com/imagemodule/16561547476_5e0f6060d8_b.jpg",
-  "https://s3-us-west-1.amazonaws.com/imagemodule/16401682399_6e7cb539cd_b.jpg"
+    "https://s3-us-west-1.amazonaws.com/imagemodule/16561547556_88d53e4216_b.jpg",
+    "https://s3-us-west-1.amazonaws.com/imagemodule/15965382974_caeb4189d9_b.jpg",
+    "https://s3-us-west-1.amazonaws.com/imagemodule/15967767923_3a41c9ec1a_b.jpg",
+    "https://s3-us-west-1.amazonaws.com/imagemodule/15967768043_a4cf7f497f_b.jpg",
+    "https://s3-us-west-1.amazonaws.com/imagemodule/15967768093_461f8f5f0d_b.jpg",
+    "https://s3-us-west-1.amazonaws.com/imagemodule/15967768423_4d91799830_b.jpg",
+    "https://s3-us-west-1.amazonaws.com/imagemodule/16400524980_ca60012b25_b.jpg",
+    "https://s3-us-west-1.amazonaws.com/imagemodule/16400525400_28a4117ebe_b.jpg",
+    "https://s3-us-west-1.amazonaws.com/imagemodule/16561547476_5e0f6060d8_b.jpg",
+    "https://s3-us-west-1.amazonaws.com/imagemodule/16401682399_6e7cb539cd_b.jpg"
 ];
 
 const roomsQuery = 'INSERT INTO rooms (room_name, city) Value ?';
@@ -78,4 +78,4 @@ const getImageInfo= function(callback) {
 
 module.exports = {
   getImageTableInfo
-}  
+} 
