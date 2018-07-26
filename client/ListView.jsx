@@ -3,7 +3,7 @@ import ListEntry from './ListEntry.jsx';
 
 class ListView extends React.Component {
   constructor(props){
-      super(props);
+    super(props);
   }
 
   render(){
