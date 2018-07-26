@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ListView from './ListView.jsx';
 import ImagePopUp from './ImagePopUp.jsx';
-import sampledata from './sampledata.js';
 import $ from 'jQuery'; 
 
 class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      images: sampledata.images,
+      images: null,
       currentImage: ''
     };  
     this.clickImage = this.clickImage.bind(this);
@@ -33,10 +31,15 @@ class App extends React.Component {
   }
   
   render(){
+
+    if(this.state.images === null) {
+      return <p>Loading...</p>
+    }
+
     return(
       <div>
         <img className="main-page-view" src={this.state.currentImage} />
-        <ListView clickImage={this.clickImage} images={this.state.images} />
+        <ImagePopUp clickImage={this.clickImage} images={this.state.images} />
       </div>
     )
   }     
