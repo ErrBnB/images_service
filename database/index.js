@@ -51,21 +51,21 @@ for(var i = 0; i <= 99; i++){
 };
 
 // Completed and in database already 
-connection.query(roomsQuery, [roomsValues], (err) => {
-  if(err){
-    console.log('Error Inserting Room Data' + err);
-  }
-});
+// connection.query(roomsQuery, [roomsValues], (err) => {
+//   if(err){
+//     console.log('Error Inserting Room Data' + err);
+//   }
+// });
 
 // Completed and in database already 
-connection.query(imagesQuery, [imagesValues], (err) => {
-  if(err){
-    console.log('Error Inserting Image Data' + err);
-  }  
-});
+// connection.query(imagesQuery, [imagesValues], (err) => {
+//   if(err){
+//     console.log('Error Inserting Image Data' + err);
+//   }  
+// });
 
 const getImageInfo= function(callback) {
-  const query = 'SELECT * FROM images INNER JOIN rooms ON room_id = rooms.id where rooms.id = 49';
+  const query = 'SELECT * FROM images INNER JOIN rooms ON room_id = rooms.id where rooms.id = 73';
   connection.query(query, (err, data) => {
       if(err){
           callback(err);
@@ -77,5 +77,5 @@ const getImageInfo= function(callback) {
 };
 
 module.exports = {
-  getImageTableInfo
+  getImageInfo
 } 
