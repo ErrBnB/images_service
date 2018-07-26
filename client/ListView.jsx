@@ -7,15 +7,17 @@ class ListView extends React.Component {
   }
 
   render(){
-      return(
-        <div className="list-view">
+    return(
+      <div className="list-view">
+        <button className="left-arrow">&#10094;</button>
           <ul>
-              {this.props.images.map(image =>
-                  <ListEntry image={image} />
-              )}
-          </ul>    
-        </div>
-      )
+            {this.props.images.map(image =>
+                <ListEntry clickImage={this.props.clickImage} image={image} />
+            )}
+          </ul>   
+        <button className="right-arrow">&#10095;</button> 
+      </div>
+    )
   }   
 };
 

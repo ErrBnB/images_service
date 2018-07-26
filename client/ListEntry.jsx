@@ -2,11 +2,11 @@ import React from 'react';
 
 const ListEntry = (props) => {
   return (
-      <div className = "per-list-entry">
-        <li>
-            <img src={props.image.url} height="200" width="200"/>{props.image.description}
-        </li>
-      </div>
+    <li>
+        <img className="picture-gallery" onClick={props.clickImage} src={props.image.url} width="250"/>
+        <br></br>
+        {props.image.description}
+    </li>
   )
 };
 
