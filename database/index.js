@@ -65,7 +65,7 @@ for(var i = 0; i <= 99; i++){
 // });
 
 const getImageInfo= function(callback) {
-  const query = 'SELECT * FROM images INNER JOIN rooms ON room_id = rooms.id where rooms.id = 73';
+  const query = 'SELECT images.* FROM images INNER JOIN rooms ON room_id = rooms.id where rooms.id = 73';
   connection.query(query, (err, data) => {
       if(err){
           callback(err);
