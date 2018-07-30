@@ -9,13 +9,11 @@ class ListView extends React.Component {
   render(){
     return(
       <div className="list-view">
-        <button className="left-arrow">&#10094;</button>
           <ul>
             {this.props.images.map(image =>
-                <ListEntry clickImage={this.props.clickImage} image={image} />
+                <ListEntry clickImage={this.props.clickImage} image={image} key={image.id} />
             )}
           </ul>   
-        <button className="right-arrow">&#10095;</button> 
       </div>
     )
   }   
